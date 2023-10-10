@@ -1,0 +1,11 @@
+1. Buy a Domain
+2. change Nameserver to Cloudflares Nameserver
+3. Setup your Website and Setup ZeroTrust
+4. Create a Tunnel
+5. Install Portainer and create a cronjob @reboot which will always run the connector for the tunnel
+6. Create a virtual Network in Warp
+7. in your tunnel add a private network and add your host or net(wont work) to your virtual network
+8. Now you have to add these devices as managed network you can do that in your warp settings.
+8.5 You ask why? For example when you want to tunnel rdp you have to disable your warp tunnel on the host to want to connect to with them add as managed network you dont need to disable your warp tunnel
+9. In case you want to connect to differnet networks together you'll have to create a new tunnel and under private network add your host or net(wont work) to your virtual network(you created before)
+10  Now you have to add the devices added as private newtwok as managed network aswell you can do that in your warp settings.
